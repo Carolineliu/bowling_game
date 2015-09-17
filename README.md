@@ -1,2 +1,6 @@
 # bowling_game
-圈复杂度特别高，一个功能的代码行数超过要求，代码会继续修改的。
+这个程序有四个类，Frame类有getTotalScore方法，把一局保龄球的分数处理成数组，这个数组的元素是每
+一个小局的分数，并把每一小局的分数传给StregyFactory类中的getSingalElementScore方法，
+getSingalElementScore方法是根据分数判断是那种类型的球，并根据不同类型的球计算分数，
+并返回分数给getTotalScore方法。Strike类的getScore方法是处理球类型为strike的分数。
+Type类是把球的分数转化为数字便于计算。

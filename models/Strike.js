@@ -7,12 +7,13 @@ function Strike() {
 Strike.prototype.getScore = function(num, frameArray) {
   var type = new Type();
   var element = frameArray[num];
+
   if (num === frameArray.length - 1) {
     return 10 + type.judgeType(frameArray[num].substr(0, 1)) +
       type.judgeType(frameArray[num].substr(1, 1));
   }
 
-  if (element.length === 1) {
+  if (element.substr(0, 1) === "X") {
     return 20 + type.judgeType(frameArray[num + 1].substr(0, 1));
   } else {
     return element.substr(1, 1) !== "/" ? 10 +

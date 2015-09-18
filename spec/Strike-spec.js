@@ -15,7 +15,6 @@ describe("Strike", function() {
       expect(strike.getScore(4, frameArray)).toBe(18);
       expect(strike.getScore(1, frameArray)).toBe(20);
 
-
     });
   });
 });

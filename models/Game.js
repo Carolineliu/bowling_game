@@ -14,7 +14,7 @@ Game.prototype.getTotalScore = function(frames) {
   frameArray.push(addFrame);
 
   for (var i = 0; i < frameArray.length - 1; i++) {
-    score += strategyFactory.getSingalElementScore(i, frameArray);
+    score += strategyFactory.getFrameScore(i, frameArray);
   }
 
   return score;

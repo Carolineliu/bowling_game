@@ -2,11 +2,11 @@ var Strike = require("./Strike.js");
 var Spare = require("./Spare.js");
 var Common = require("./Common.js");
 
-function StregyFactory() {
+function StrategyFactory() {
 
 }
 
-StregyFactory.prototype.getSingalElementScore = function(num, frameArray) {
+StrategyFactory.prototype.getFrameScore = function(num, frameArray) {
   var element = frameArray[num];
   var score;
 
@@ -25,4 +25,4 @@ StregyFactory.prototype.getSingalElementScore = function(num, frameArray) {
   }
 };
 
-module.exports = StregyFactory;
+module.exports = StrategyFactory;

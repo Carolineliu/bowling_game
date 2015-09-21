@@ -1,6 +1,6 @@
-var Strike = require("./Strike.js");
-var Spare = require("./Spare.js");
-var Common = require("./Common.js");
+var Strike = require("./strike.js");
+var Spare = require("./spare.js");
+var Common = require("./common.js");
 
 function StrategyFactory() {
 

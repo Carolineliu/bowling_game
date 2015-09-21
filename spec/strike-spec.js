@@ -1,4 +1,4 @@
-var Strike = require("../models/Strike.js");
+var Strike = require("../models/strike.js");
 
 describe("Strike", function() {
   describe("function", function() {

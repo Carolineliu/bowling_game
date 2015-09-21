@@ -1,4 +1,4 @@
-var Spare = require("../models/Spare.js");
+var Spare = require("../models/spare.js");
 
 describe("Spare", function() {
   describe("function", function() {

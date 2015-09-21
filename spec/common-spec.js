@@ -1,4 +1,4 @@
-var Common = require("../models/Common.js");
+var Common = require("../models/common.js");
 
 describe("Common", function() {
   describe("function", function() {

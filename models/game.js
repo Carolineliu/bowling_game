@@ -1,4 +1,4 @@
-var StrategyFactory = require("./StrategyFactory.js");
+var StrategyFactory = require("./strategy-factory.js");
 
 function Game() {
 

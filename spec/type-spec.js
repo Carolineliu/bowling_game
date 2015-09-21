@@ -1,4 +1,4 @@
-var Type = require("../models/Type.js");
+var Type = require("../models/type.js");
 
 describe("Type", function() {
   describe("function", function() {

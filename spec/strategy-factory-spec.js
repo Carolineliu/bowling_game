@@ -1,4 +1,4 @@
-var StrategyFactory = require("../models/StrategyFactory.js");
+var StrategyFactory = require("../models/strategy-factory.js");
 
 describe("StrategyFactory", function() {
   describe("function", function() {

@@ -1,5 +1,5 @@
-var Type = require("./Type.js");
-var TEN = require("./lib/Constant.js").TEN;
+var Type = require("./type.js");
+var TEN = require("./lib/constant.js").TEN;
 
 function Spare() {
 

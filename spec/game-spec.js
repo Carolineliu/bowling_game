@@ -1,5 +1,5 @@
-var Game = require("../models/Game.js");
-var Type = require("../models/Type.js");
+var Game = require("../models/game.js");
+var Type = require("../models/type.js");
 
 describe("Game", function() {
   describe("function", function() {

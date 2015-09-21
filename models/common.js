@@ -1,4 +1,4 @@
-var Type = require("./Type.js");
+var Type = require("./type.js");
 
 function Common() {
 

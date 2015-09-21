@@ -1,6 +1,6 @@
-var Type = require("./Type.js");
-var TEN = require("./lib/Constant.js").TEN;
-var TWENTY = require("./lib/Constant.js").TWENTY;
+var Type = require("./type.js");
+var TEN = require("./lib/constant.js").TEN;
+var TWENTY = require("./lib/constant.js").TWENTY;
 
 function Strike() {
 

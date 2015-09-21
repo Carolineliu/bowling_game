@@ -10,12 +10,12 @@ StrategyFactory.prototype.getFrameScore = function(num, frameArray) {
   var element = frameArray[num];
   var score;
 
-  if (element.substr(0, 1) === "X") {
+  if (element[0] === "X") {
     score = new Strike().getScore(num + 1, frameArray);
     return score;
   }
 
-  if (element.substr(1, 1) === "/") {
+  if (element[1] === "/") {
     score = new Spare().getScore(num + 1, frameArray);
     return score;
   } else {

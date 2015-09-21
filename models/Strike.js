@@ -11,16 +11,16 @@ Strike.prototype.getScore = function(num, frameArray) {
   var element = frameArray[num];
 
   if (num === frameArray.length - 1) {
-    return TEN + type.judgeType(frameArray[num].substr(0, 1)) +
-      type.judgeType(frameArray[num].substr(1, 1));
+    return TEN + type.judgeType(frameArray[num][0]) +
+      type.judgeType(frameArray[num][1]);
   }
 
-  if (element.substr(0, 1) === "X") {
-    return TWENTY + type.judgeType(frameArray[num + 1].substr(0, 1));
+  if (element[0] === "X") {
+    return TWENTY + type.judgeType(frameArray[num + 1][0]);
   } else {
-    return element.substr(1, 1) !== "/" ? TEN +
-      type.judgeType(element.substr(0, 1)) +
-      type.judgeType(element.substr(1, 1)) : TWENTY;
+    return element[1] !== "/" ? TEN +
+      type.judgeType(element[0]) +
+      type.judgeType(element[1]) : TWENTY;
   }
 };
 

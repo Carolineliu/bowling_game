@@ -7,7 +7,7 @@ function Spare() {
 
 Spare.prototype.getScore = function(num, frameArray) {
   var type = new Type();
-  var element = frameArray[num].substr(0, 1);
+  var element = frameArray[num][0];
 
   return TEN + type.judgeType(element);
 };

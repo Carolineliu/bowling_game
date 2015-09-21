@@ -1,4 +1,3 @@
-var Type = require("./Type.js");
 var Strike = require("./Strike.js");
 var Spare = require("./Spare.js");
 var Common = require("./Common.js");
@@ -8,7 +7,6 @@ function StregyFactory() {
 }
 
 StregyFactory.prototype.getSingalElementScore = function(num, frameArray) {
-  var type = new Type();
   var element = frameArray[num];
   var score;
 

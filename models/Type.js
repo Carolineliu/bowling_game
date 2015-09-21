@@ -14,9 +14,6 @@ Type.prototype.judgeType = function(type) {
     case "-":
       score = 0;
       break;
-    case ".":
-      score = 0;
-      break;
     default:
       score = parseInt(type);
   }

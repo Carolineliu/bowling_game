@@ -1,8 +1,6 @@
 var Type = require("./Type.js");
 var TEN = require("./lib/Constant.js").TEN;
 
-console.log(TEN);
-
 function Spare() {
 
 }

@@ -6,7 +6,7 @@ function StrategyFactory() {
 
 }
 
-StrategyFactory.prototype.getFrameScore = function(num, frameArray) {
+StrategyFactory.prototype.getScore = function(num, frameArray) {
   var element = frameArray[num];
   var score;
 

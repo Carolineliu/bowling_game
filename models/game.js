@@ -1,4 +1,4 @@
-var Frame = require("./strategy-factory.js");
+var Frame = require("./frame.js");
 
 function Game() {
 
@@ -19,7 +19,7 @@ Game.prototype.getTotalScore = function(game) {
   var frameArray = this.getNewFrames(game);
 
   for (var i = 0; i < frameArray.length - 1; i++) {
-    score += frame.getFrameScore(i, frameArray);
+    score += frame.getScore(i, frameArray);
   }
 
   return score;

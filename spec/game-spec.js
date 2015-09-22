@@ -16,6 +16,21 @@ describe("Game", function() {
       games4 = "--|--|--|--|--|--|--|--|--|--||";
     });
 
+    it("should get new frame", function() {
+      var newFrame = ['X', '7/', '9-', 'X', '-8', '8/', '-6', 'X', 'X', 'X', '81'];
+      var newFrame1 = ['9-', '9-', '9-', '9-', '9-', '9-', '9-', '9-', '9-', '9-', ''];
+      var newFrame2 = ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'XX'];
+      var newFrame3 = ['5/', '3/', '7/', '7/', '9/', '-/', '5/', '4/', '5/', '5/', '5'];
+      var newFrame4 = ['--', '--', '--', '--', '--', '--', '--', '--', '--', '--', ''];
+
+      expect(game.getNewFrames(games)).toEqual(newFrame);
+      expect(game.getNewFrames(games1)).toEqual(newFrame1);
+      expect(game.getNewFrames(games2)).toEqual(newFrame2);
+      expect(game.getNewFrames(games3)).toEqual(newFrame3);
+      expect(game.getNewFrames(games4)).toEqual(newFrame4);
+
+    });
+
     it("should get totle score in game ", function() {
 
       expect(game.getTotalScore(games)).toBe(167);

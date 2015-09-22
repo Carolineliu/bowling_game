@@ -1,20 +1,25 @@
-var StrategyFactory = require("./strategy-factory.js");
+var Frame = require("./strategy-factory.js");
 
 function Game() {
 
 }
 
-Game.prototype.getTotalScore = function(frames) {
-  var frameArray = frames.split("||")[0].split("|");
-
-  var addFrame = frames.split("||")[1];
-  var strategyFactory = new StrategyFactory();
-  var score = 0;
+Game.prototype.getNewFrames = function(game) {
+  var frameArray = game.split("||")[0].split("|");
+  var addFrame = game.split("||")[1];
 
   frameArray.push(addFrame);
 
+  return frameArray;
+};
+
+Game.prototype.getTotalScore = function(game) {
+  var score = 0;
+  var frame = new Frame();
+  var frameArray = this.getNewFrames(game);
+
   for (var i = 0; i < frameArray.length - 1; i++) {
-    score += strategyFactory.getFrameScore(i, frameArray);
+    score += frame.getFrameScore(i, frameArray);
   }
 
   return score;
